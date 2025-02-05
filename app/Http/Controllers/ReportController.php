@@ -52,7 +52,7 @@ class ReportController extends Controller
         ]);
 
         Work::where('id', $request->id)->update([
-            'score' => $request->status,
+            'score' => $request->score,
         ]);
         return redirect()->back();
     }
